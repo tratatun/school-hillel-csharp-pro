@@ -23,12 +23,12 @@ namespace Lesson02
 
         static void Main(string[] args)
         {
-            Task1();
-            Task2();
+            //Task1();
+            //Task2();
             Task3();
-            Task4();
-            Task5();
-            Task6();
+            //Task4();
+            //Task5();
+            //Task6();
         }
 
         public static string Encrypt(string str)
@@ -229,6 +229,13 @@ namespace Lesson02
                 var letterNumber = (32 + (seed) % (126 - 32));
                 sb.Append((char)letterNumber);
             }
+
+            // sorting string
+            char[] arr = sb.ToString().ToCharArray();
+            Array.Sort(arr);
+            sb.Clear();
+            sb.Append(arr);
+
             Console.WriteLine(sb.ToString());
         }
 
