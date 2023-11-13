@@ -23,12 +23,12 @@ namespace Lesson02
 
         static void Main(string[] args)
         {
-            //Task1();
-            //Task2();
+            Task1();
+            Task2();
             Task3();
-            //Task4();
-            //Task5();
-            //Task6();
+            Task4();
+            Task5();
+            Task6();
         }
 
         public static string Encrypt(string str)
