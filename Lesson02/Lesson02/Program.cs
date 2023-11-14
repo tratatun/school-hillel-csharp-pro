@@ -229,6 +229,13 @@ namespace Lesson02
                 var letterNumber = (32 + (seed) % (126 - 32));
                 sb.Append((char)letterNumber);
             }
+
+            // sorting string
+            char[] arr = sb.ToString().ToCharArray();
+            Array.Sort(arr);
+            sb.Clear();
+            sb.Append(arr);
+
             Console.WriteLine(sb.ToString());
         }
 
